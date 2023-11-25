@@ -1,7 +1,8 @@
-year=int(input("Enter the year"))
-if year%400==0:
-  print("{} is a leap year.".format(year))
-elif year %4==0 and year%100!=0:
-  print("{} is a leap year.".format(year))
-else:
-  print("{} is not a leap year.".format(year))
+def fact(n):
+  if n==0 or n==1:
+    return 1
+  else:
+    return n*fact(n-1)
+
+n= int(input("Enater a number: "))
+print('Factorial of {} is {}'.format(n,fact(n)))
